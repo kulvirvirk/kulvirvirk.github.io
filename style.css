@@ -1,10 +1,96 @@
+
+
+.main_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    background-color: black;
+    padding: 17px;
+}
+
+.name{
+  padding-top: 10%;
+  text-align: center;
+  transition: all 1s;
+}
+
+/*centers the profile pic and linkedIn bagde */
+.profile_pic, .linkedIn_badge{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+
 img {
   border-radius: 10%;
 }
 
-body{
-  /* background: linear-gradient(white,black);
-  color: Orange; */
+  .education, .certs, .pro_experience, .skills{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding-left: 10px;
+  border-radius: 2%;
+  transition: all .5s;
 
-;
+}
+
+.name:hover, .profile_pic:hover, .linkedIn_badge:hover, .education:hover, .certs:hover, .pro_experience:hover, .skills:hover{
+  transform: scale(1.09);
+  border: 1px solid black;
+}
+.education:hover, .certs:hover, .pro_experience:hover, .skills:hover{
+transform: scale(1.03);
+border: 1px solid black;
+}
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.education, .certs{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.name, .profile_pic, .linkedIn_badge, .pro_experience {
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red {
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Purple Background
+ **********************************************************************/
+.skills {
+    background: #A88BEB; /* Old browsers */
+    background: -moz-linear-gradient(top, #A88BEB 0%, #F1A7F1 44%, #F8CEEC 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A88BEB), color-stop(44%,#F1A7F1), color-stop(100%,#F8CEEC)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* IE10+ */
+    background: linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* W3C */
 }
