@@ -40,7 +40,7 @@
      box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 /*********************************************************************** * Green Background **********************************************************************/
- .education, .certs{
+ .education, .certs, .name, .profile_pic, .linkedIn_badge, .pro_experience {
      background: #56B870;
     /* Old browsers */
      background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%);
@@ -57,8 +57,8 @@
     /* W3C */
 }
 /*********************************************************************** * Yellow Background **********************************************************************/
- .name, .profile_pic, .linkedIn_badge, .pro_experience {
-     background: #F3AAAA;
+// .yellow {
+    background: #F3AAAA;
     /* Old browsers */
      background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%);
     /* FF3.6+ */
